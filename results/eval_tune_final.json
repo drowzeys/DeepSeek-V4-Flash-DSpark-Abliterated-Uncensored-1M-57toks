@@ -1,0 +1,12 @@
+{
+  "recipe": "stock L0-9 + ablit L10-42+mtp \u03bb=3.5 k=1 + Hermes skills on-demand",
+  "hermes_ok": true,
+  "bypass_pct": 100.0,
+  "extra_crack_bypass": true,
+  "c1": [
+    57.180092793389875,
+    56.62243515665525,
+    56.81900949672013
+  ],
+  "pass_dual": true
+}

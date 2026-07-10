@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "api": "http://10.100.10.3:8000/v1",
+    "ts": "2026-07-09T23:19:57Z",
+    "stack": "1M nvfp4_ds_mla stage-c B12X DSpark k=5 TP=2"
+  },
+  "c1": [
+    {
+      "run": 1,
+      "prompt": "Write a Python function that implements binary search on a sorted list. Include ",
+      "out_tokens": 253,
+      "pure_tok_s": 44.42117520701969,
+      "wall_tok_s": 42.457849554927584,
+      "ttft_s": 0.28588088900141884,
+      "elapsed_s": 5.958851016999688,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 29,
+        "total_tokens": 282,
+        "completion_tokens": 253
+      },
+      "tool_calls_chunks": 0,
+      "raw_tool_calls": [],
+      "text_preview": "def binary_search(arr, target):\n    \"\"\"\n    Perform binary search on a sorted list to find the target value.\n\n    Args:\n        arr (list): A sorted list of comparable elements (e.g., numbers, strings).\n                    The list must be sorted in ascending order.\n        target: The value to sear"
+    },
+    {
+      "run": 2,
+      "prompt": "Explain how NCCL all-reduce works over RoCE in two short paragraphs.",
+      "out_tokens": 256,
+      "pure_tok_s": 32.665999166643125,
+      "wall_tok_s": 31.740621725489763,
+      "ttft_s": 0.2590925060067093,
+      "elapsed_s": 8.065374466008507,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 20,
+        "total_tokens": 276,
+        "completion_tokens": 256
+      },
+      "tool_calls_chunks": 0,
+      "raw_tool_calls": [],
+      "text_preview": "NCCL (NVIDIA Collective Communications Library) all-reduce over RoCE (RDMA over Converged Ethernet) works by leveraging a **ring-based** or **tree-based** algorithm to sum data across GPUs, while using RDMA (Remote Direct Memory Access) to bypass the CPU and kernel. In a ring all-reduce, each GPU is"
+    },
+    {
+      "run": 3,
+      "prompt": "Write a bash script that rsyncs a directory with retries and logging.",
+      "out_tokens": 256,
+      "pure_tok_s": 48.82815800454278,
+      "wall_tok_s": 46.8933266183383,
+      "ttft_s": 0.23680249199969694,
+      "elapsed_s": 5.4591989620093955,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 20,
+        "total_tokens": 276,
+        "completion_tokens": 256
+      },
+      "tool_calls_chunks": 0,
+      "raw_tool_calls": [],
+      "text_preview": "Here's a bash script that rsyncs a directory with retries and logging:\n\n```bash\n#!/bin/bash\n\n# Rsync with retries and logging script\n# Usage: ./rsync_with_retries.sh <source> <destination> [options]\n\nset -euo pipefail\n\n# Configuration\nMAX_RETRIES=3\nRETRY_DELAY=5  # seconds between retries\nLOG_FILE=\""
+    },
+    {
+      "run": 4,
+      "prompt": "Implement a minimal LRU cache class in Python with get/put O(1).",
+      "out_tokens": 256,
+      "pure_tok_s": 56.59894287459138,
+      "wall_tok_s": 54.52144320118736,
+      "ttft_s": 0.19001578500319738,
+      "elapsed_s": 4.695400286000222,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 21,
+        "total_tokens": 277,
+        "completion_tokens": 256
+      },
+      "tool_calls_chunks": 0,
+      "raw_tool_calls": [],
+      "text_preview": "Here's a minimal LRU (Least Recently Used) cache implementation in Python with O(1) time complexity for both `get` and `put` operations:\n\n```python\nclass LRUCache:\n    def __init__(self, capacity: int):\n        self.capacity = capacity\n        self.cache = {}  # key -> node\n        self.head = Node("
+    },
+    {
+      "run": 5,
+      "prompt": "Describe the tradeoffs of nvfp4 vs fp8 KV cache for long-context MLA decode.",
+      "out_tokens": 256,
+      "pure_tok_s": 35.68883935685764,
+      "wall_tok_s": 34.37117024600917,
+      "ttft_s": 0.30301166500430554,
+      "elapsed_s": 7.448102528011077,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 25,
+        "total_tokens": 281,
+        "completion_tokens": 256
+      },
+      "tool_calls_chunks": 0,
+      "raw_tool_calls": [],
+      "text_preview": "This is a highly specific and excellent question that gets to the heart of the current frontier in LLM inference optimization, particularly for models using **Multi-Head Latent Attention (MLA)** like DeepSeek-V2/V3.\n\nLet's break down the tradeoffs between **NVFP4** (NVIDIA's 4-bit floating point) an"
+    }
+  ],
+  "evals": {
+    "math": [
+      {
+        "q": "12*11",
+        "expect": "132",
+        "got": "132",
+        "ok": true,
+        "text": "132"
+      },
+      {
+        "q": "100-37",
+        "expect": "63",
+        "got": "63",
+        "ok": true,
+        "text": "63"
+      },
+      {
+        "q": "847*293",
+        "expect": "248171",
+        "got": "248171",
+        "ok": true,
+        "text": "248171"
+      },
+      {
+        "q": "15+27",
+        "expect": "42",
+        "got": "42",
+        "ok": true,
+        "text": "42"
+      },
+      {
+        "q": "2**10",
+        "expect": "1024",
+        "got": "1024",
+        "ok": true,
+        "text": "1024"
+      }
+    ],
+    "tools": {
+      "finish_reason": "tool_calls",
+      "has_tool_calls": true,
+      "tool_calls": [
+        {
+          "id": "chatcmpl-tool-b4fa022703cd1f5d",
+          "type": "function",
+          "function": {
+            "name": "get_weather",
+            "arguments": "{\"city\": \"Paris\"}"
+          }
+        }
+      ],
+      "content_preview": "",
+      "ok": true
+    },
+    "code_smoke": {
+      "text": "```python\ns[::-1]\n```",
+      "ok": true
+    }
+  },
+  "c1_summary": {
+    "n": 5,
+    "pure_mean": 43.64062292193092,
+    "pure_peak": 56.59894287459138,
+    "wall_mean": 41.996882269190436,
+    "wall_peak": 54.52144320118736
+  },
+  "c4": {
+    "streams": [
+      {
+        "out_tokens": 128,
+        "pure_tok_s": 19.36874071308469,
+        "wall_tok_s": 18.630697864093445,
+        "ttft_s": 0.313424395993934,
+        "elapsed_s": 6.870381396001903
+      },
+      {
+        "out_tokens": 128,
+        "pure_tok_s": 16.671449624604726,
+        "wall_tok_s": 16.138322400483304,
+        "ttft_s": 0.3136177249980392,
+        "elapsed_s": 7.9314315840019844
+      },
+      {
+        "out_tokens": 128,
+        "pure_tok_s": 17.44309678251702,
+        "wall_tok_s": 16.855838053755708,
+        "ttft_s": 0.31299087399384007,
+        "elapsed_s": 7.593808126999647
+      },
+      {
+        "out_tokens": 128,
+        "pure_tok_s": 18.26571977691806,
+        "wall_tok_s": 17.617912674230997,
+        "ttft_s": 0.31241770400083624,
+        "elapsed_s": 7.265332866998506
+      }
+    ],
+    "aggregate_tok_s": 64.52887858410122,
+    "wall_s": 7.934432012989419,
+    "total_tokens": 512
+  }
+}

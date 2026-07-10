@@ -1,16 +1,23 @@
 # DeepSeek-V4-Flash-DSpark — Abliterated (Uncensored) · 1M · ~57 tok/s
 
+![C1 performance](charts/c1-performance-ladder.png)
+
 **Weights (Hugging Face):**  
 https://huggingface.co/drowzeys/DeepSeek-V4-Flash-DSpark-Abliterated-Uncensored
+
+**Full numbers + raw JSON:** [RESULTS.md](RESULTS.md) · [results/](results/)
 
 Local abliterated build of **DeepSeek-V4-Flash-DSpark** for **2× NVIDIA DGX Spark (GB10)** with:
 
 | | |
 |---|---|
-| Context | **1,048,576** (`nvfp4_ds_mla` KV) |
+| Context | **1,048,576** (`nvfp4_ds_mla` KV · ~2.39M pool) |
 | C1 pure | **~57 tok/s** (code decode, TP=2 stage-c, DSpark k=5) |
 | Refusal bypass | **~100%** on 32-prompt battery + hard probe |
 | Hermes | works with **on-demand** skills prompt (not “mandatory MUST load”) |
+
+![Refusal bypass](charts/refusal-bypass-ladder.png)
+![Final C1](charts/c1-final-1m-ablit.png)
 
 > Research / local use only. Removes most stock safety refusals.
 
@@ -75,18 +82,20 @@ See [docs/HERMES_SPILL_FIX.md](docs/HERMES_SPILL_FIX.md) and [docs/STATUS_FINETU
 ## Repo layout
 
 ```
-scripts/
-  dsv4-nvfp4-1m-serve.sh   # 1M TP=2 serve (stage-c)
-  serve-abliterated.sh     # simpler ablit serve helper
-  project_wob.py           # FP8 wo_b abliteration
-  hybrid_overlay.py        # restore stock early layers
-  compute_direction.py     # direction extraction
-  prompts.py               # capture / eval prompts
-docs/
-  STATUS_FINETUNE.md
-  ABLIT_META.json
-  eval_tune_final.json
+charts/          # C1, refusal, KV, recipe-evolution PNGs
+results/         # raw JSON evals, refusal suites, direction vector, ABLIT_META
+docs/            # STATUS, Hermes spill notes
+scripts/         # serve + abliteration tooling
+RESULTS.md       # full performance + refusal write-up
 ```
+
+| path | contents |
+|---|---|
+| [RESULTS.md](RESULTS.md) | performance + refusal methodology |
+| [results/eval_tune_final.json](results/eval_tune_final.json) | final dual-goal pass |
+| [results/refusal_suite_1m_ablit.json](results/refusal_suite_1m_ablit.json) | 32-prompt suite + labels |
+| [results/ABLIT_META.json](results/ABLIT_META.json) | λ / layer range / edit stats |
+| [charts/](charts/) | figures used in RESULTS |
 
 ## Measured (publish cluster)
 
