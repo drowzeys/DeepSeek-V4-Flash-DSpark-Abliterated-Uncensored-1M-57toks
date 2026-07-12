@@ -21,6 +21,18 @@ Local abliterated build of **DeepSeek-V4-Flash-DSpark** for **2× NVIDIA DGX Spa
 
 > Research / local use only. Removes most stock safety refusals.
 
+
+## Responsible Use (required)
+
+**These abliterated weights remove safety refusals.** Before download or use you must agree to:
+
+→ **[RESPONSIBLE_USE.md](RESPONSIBLE_USE.md)**
+
+Summary: 18+ only; no sexual exploitation/endangerment of minors; no self-harm/suicide promotion; no illegal content, harassment, doxxing, or fraud; you are solely accountable for harmful uses of model outputs (including substance/recipe generation from your prompts); comply with the upstream DeepSeek license; add your own safety filters and access controls. Weights as-is, no warranty.
+
+Hugging Face access is **gated** — users must accept the same terms to download:
+https://huggingface.co/drowzeys/DeepSeek-V4-Flash-DSpark-Abliterated-Uncensored
+
 ## What’s in the weights
 
 Hybrid **layer-range** abliteration (mHC-resistant; LoRA does not work on this family):
