@@ -24,14 +24,35 @@ Local abliterated build of **DeepSeek-V4-Flash-DSpark** for **2× NVIDIA DGX Spa
 
 ## Responsible Use (required)
 
-**These abliterated weights remove safety refusals.** Before download or use you must agree to:
+> **WARNING:** This model has had **safety refusals removed**. That makes it useful for red-teaming, security research, evaluation, and unfiltered assistant tasks — and also removes guardrails **you** must supply yourself.
 
-→ **[RESPONSIBLE_USE.md](RESPONSIBLE_USE.md)**
+**Full agreement:** → **[RESPONSIBLE_USE.md](RESPONSIBLE_USE.md)**
 
-Summary: 18+ only; no sexual exploitation/endangerment of minors; no self-harm/suicide promotion; no illegal content, harassment, doxxing, or fraud; you are solely accountable for harmful uses of model outputs (including substance/recipe generation from your prompts); comply with the upstream DeepSeek license; add your own safety filters and access controls. Weights as-is, no warranty.
+### Prohibited uses (you must agree)
 
-Hugging Face access is **gated** (Username, Email, Reason for intended use + agreement) — users must accept the same terms to download:
-https://huggingface.co/drowzeys/DeepSeek-V4-Flash-DSpark-Abliterated-Uncensored
+- Anything involving the **sexual exploitation or endangerment of minors**
+- You must be **18 years of age or older** to use and download this model
+- Any information generated that can cause harm (e.g. recipes / knowledge to make materials or substances) is **your own input and responsibility**; you are **accountable for any harm/damage** from your action/input
+- Content promoting **self-harm or suicide**
+- Material that is **illegal in your jurisdiction**, or that targets real individuals for **harassment, doxxing, or fraud**
+- Any use prohibited by the **upstream DeepSeek license**
+
+### Your responsibility
+
+You must add appropriate **safety filtering**, **human review**, and **access controls**. Weights are **as-is, no warranty**. Review and comply with the upstream DeepSeek license before use or redistribution.
+
+### Hugging Face access fields (gated)
+
+Request access at: https://huggingface.co/drowzeys/DeepSeek-V4-Flash-DSpark-Abliterated-Uncensored  
+
+| Field | Notes |
+|---|---|
+| **Username** | May default to your HF username |
+| **Email** | May default to your HF account email |
+| **Reason for intended use** | e.g. red-teaming, evaluation, research, local assistant |
+
+Plus the agreement checkboxes on the HF form.
+
 
 ## What’s in the weights
 
