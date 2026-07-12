@@ -20,3 +20,16 @@ You are responsible for adding appropriate **safety filtering**, **human review*
 The weights are provided **as-is, with no warranty**. The license is inherited from the upstream DeepSeek base model — **review and comply with it** before use or redistribution.
 
 By checking the agreement / requesting access, you confirm that you have read, understood, and accept these terms.
+
+## Access request fields (Hugging Face gate)
+
+When requesting download access on Hugging Face, you must provide:
+
+| Field | Description |
+|---|---|
+| **Username** | Your name or handle (the form may default to your Hugging Face username) |
+| **Email** | Contact email (the form may default to your Hugging Face account email) |
+| **Reason for intended use** | Brief description of planned use (e.g. red-teaming, security research, evaluation, local assistant) |
+
+Plus all **Responsible Use** checkboxes (18+, prohibited uses, liability, upstream license).
+

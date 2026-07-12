@@ -30,7 +30,7 @@ Local abliterated build of **DeepSeek-V4-Flash-DSpark** for **2× NVIDIA DGX Spa
 
 Summary: 18+ only; no sexual exploitation/endangerment of minors; no self-harm/suicide promotion; no illegal content, harassment, doxxing, or fraud; you are solely accountable for harmful uses of model outputs (including substance/recipe generation from your prompts); comply with the upstream DeepSeek license; add your own safety filters and access controls. Weights as-is, no warranty.
 
-Hugging Face access is **gated** — users must accept the same terms to download:
+Hugging Face access is **gated** (Username, Email, Reason for intended use + agreement) — users must accept the same terms to download:
 https://huggingface.co/drowzeys/DeepSeek-V4-Flash-DSpark-Abliterated-Uncensored
 
 ## What’s in the weights
