@@ -1,0 +1,16 @@
+snapshot_id: dsv4f-ablit-v1.1-mida-c4-1m
+created_utc: 2026-07-12T15:24:33Z
+hostname: spark-13b3
+api: http://10.100.10.1:8000/v1
+model: deepseek-v4-flash-dspark
+weights_local: /home/keyspark/models/dsv4-flash-dspark-abliterated-mida
+stock_local: /home/keyspark/models/dsv4-flash-dspark
+stock_pristine_source: keyspark@10.100.10.3:~/models/dsv4-flash-dspark
+hf_v1_0: https://huggingface.co/drowzeys/DeepSeek-V4-Flash-DSpark-Abliterated-Uncensored
+hf_v1_1: https://huggingface.co/drowzeys/DeepSeek-V4-Flash-DSpark-Abliterated-Uncensored-v1.1-alpha-Mida-Brikie
+github: https://github.com/drowzeys/DeepSeek-V4-Flash-DSpark-Abliterated-Uncensored-1M-57toks
+image: vllm-dspark-runtime:dspark-nvfp4-stage-c
+image_ghcr: ghcr.io/drowzeys/vllm-dspark-nvfp4-stage-c:gb10
+image_id=sha256:76532c4cc261afe7a7cad1d9731cd5123d0e14219c9a1d35a0ef6163fe67c5d4 created=2026-07-01T15:45:55.633531182-04:00
+github_commit=2be3332aff63d34e99b5a757b8227c01f6df4477
+github_branch=main
