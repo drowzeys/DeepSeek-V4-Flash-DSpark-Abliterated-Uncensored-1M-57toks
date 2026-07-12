@@ -1,0 +1,277 @@
+{
+  "method": "layer-range-wo_b-projection",
+  "lambda_attn": 3.5,
+  "min_layer": 10,
+  "max_layer": 42,
+  "edit_mtp": false,
+  "n_directions": 1,
+  "direction": "work/refusal_direction_r1.pt",
+  "n_edited": 33,
+  "stats": [
+    {
+      "tensor": "layers.10.attn.wo_b.weight",
+      "rel_fro": 0.052135393023490906,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.11.attn.wo_b.weight",
+      "rel_fro": 0.05468854308128357,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.12.attn.wo_b.weight",
+      "rel_fro": 0.06478320062160492,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.13.attn.wo_b.weight",
+      "rel_fro": 0.0590977817773819,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.14.attn.wo_b.weight",
+      "rel_fro": 0.06417281180620193,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.15.attn.wo_b.weight",
+      "rel_fro": 0.06259279698133469,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.16.attn.wo_b.weight",
+      "rel_fro": 0.06055906414985657,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.17.attn.wo_b.weight",
+      "rel_fro": 0.0614350363612175,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.18.attn.wo_b.weight",
+      "rel_fro": 0.057066626846790314,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.19.attn.wo_b.weight",
+      "rel_fro": 0.0575052909553051,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.20.attn.wo_b.weight",
+      "rel_fro": 0.0634072795510292,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.21.attn.wo_b.weight",
+      "rel_fro": 0.05441354215145111,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.22.attn.wo_b.weight",
+      "rel_fro": 0.05169208347797394,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.23.attn.wo_b.weight",
+      "rel_fro": 0.05326513946056366,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.24.attn.wo_b.weight",
+      "rel_fro": 0.056738436222076416,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.25.attn.wo_b.weight",
+      "rel_fro": 0.050086915493011475,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.26.attn.wo_b.weight",
+      "rel_fro": 0.06685876846313477,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.27.attn.wo_b.weight",
+      "rel_fro": 0.04937136173248291,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.28.attn.wo_b.weight",
+      "rel_fro": 0.06075902655720711,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.29.attn.wo_b.weight",
+      "rel_fro": 0.05709974840283394,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.30.attn.wo_b.weight",
+      "rel_fro": 0.05290596932172775,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.31.attn.wo_b.weight",
+      "rel_fro": 0.05211499705910683,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.32.attn.wo_b.weight",
+      "rel_fro": 0.05869821459054947,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.33.attn.wo_b.weight",
+      "rel_fro": 0.05238284170627594,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.34.attn.wo_b.weight",
+      "rel_fro": 0.058993611484766006,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.35.attn.wo_b.weight",
+      "rel_fro": 0.06322448700666428,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.36.attn.wo_b.weight",
+      "rel_fro": 0.05483544245362282,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.37.attn.wo_b.weight",
+      "rel_fro": 0.054278213530778885,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.38.attn.wo_b.weight",
+      "rel_fro": 0.05608087033033371,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.39.attn.wo_b.weight",
+      "rel_fro": 0.060355294495821,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.40.attn.wo_b.weight",
+      "rel_fro": 0.05144796520471573,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.41.attn.wo_b.weight",
+      "rel_fro": 0.054286159574985504,
+      "shape": [
+        4096,
+        8192
+      ]
+    },
+    {
+      "tensor": "layers.42.attn.wo_b.weight",
+      "rel_fro": 0.06053793430328369,
+      "shape": [
+        4096,
+        8192
+      ]
+    }
+  ],
+  "note": "mHC-resistant family; LoRA abliteration ineffective. Direct FP8 wo_b edit."
+}

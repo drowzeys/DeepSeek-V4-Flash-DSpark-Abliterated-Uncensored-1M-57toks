@@ -31,9 +31,16 @@ When requesting download access on Hugging Face, provide:
 
 Plus all agreement checkboxes listed under **Prohibited uses**.
 
-Weights: https://huggingface.co/drowzeys/DeepSeek-V4-Flash-DSpark-Abliterated-Uncensored  
+**Gated Hugging Face weight repos (same access form on both):**
+
+| Version | Repo |
+|---|---|
+| **v1.0 alpha** (full ablit + MTP) | https://huggingface.co/drowzeys/DeepSeek-V4-Flash-DSpark-Abliterated-Uncensored |
+| **v1.1 alpha** (Mida / Brikie · MTP stock · C=4) | https://huggingface.co/drowzeys/DeepSeek-V4-Flash-DSpark-Abliterated-Uncensored-v1.1-alpha-Mida-Brikie |
 
 Stock base: [deepseek-ai/DeepSeek-V4-Flash-DSpark](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-DSpark).
+
+Version chooser: [RELEASES.md](RELEASES.md).
 
 ---
 

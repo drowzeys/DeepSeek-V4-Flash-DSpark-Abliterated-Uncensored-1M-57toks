@@ -223,7 +223,15 @@ def main():
             continue
         # safetensors needs contiguous cpu tensors
         out = {k: (t.contiguous() if torch.is_tensor(t) else t) for k, t in tensors.items()}
-        save_file(out, str(dst_path))
+        # CRITICAL: if dst is a hardlink to stock (or anything else), writing would
+        # corrupt the shared inode. Always write via temp then replace.
+        if dst_path.exists() or dst_path.is_symlink():
+            dst_path.unlink()
+        tmp_path = dst_path.with_suffix(dst_path.suffix + ".tmp")
+        if tmp_path.exists():
+            tmp_path.unlink()
+        save_file(out, str(tmp_path))
+        tmp_path.replace(dst_path)
         print(f"  wrote {dst_path}", flush=True)
 
     # index unchanged
